@@ -1,0 +1,149 @@
+/*Stile del Body*/
+body {
+  margin: 0;
+  background-color: #b71b1b;
+}
+
+/*Stile dell'applicativo*/
+.App {
+  height: 100vh;
+  display: grid;
+  row-gap: 1.5rem;
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: 10% auto;
+  grid-template-areas:
+    '. header .'
+    '. content .';
+}
+
+/*Stile dell'immagine fluida*/
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+}
+
+/*Stile dell'Header*/
+header {
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-area: header;
+  margin-top: 1.5rem;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  grid-template-columns: [left] 50% [right] 50%;
+}
+
+/*Stile del logo*/
+.logo {
+  justify-self: end;
+}
+
+/*Stile del container dei leds*/
+.leds-container {
+  display: grid;
+  justify-content: start;
+  justify-self: start;
+  grid-auto-flow: column;
+}
+
+/*Stile dei leds*/
+.led {
+  height: 40px;
+  width: 40px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+/*Stile del led blu*/
+.blue-led {
+  height: 80px;
+  width: 80px;
+  border: 5px solid white;
+  background-color: blue;
+  background-image: linear-gradient(135deg, white 5px, blue);
+}
+
+/*Stile del led rosso*/
+.red-led {
+  background-color: red;
+  background-image: linear-gradient(135deg, white 5px, red);
+}
+
+/*Stile del led giallo*/
+.yellow-led {
+  background-color: yellow;
+  background-image: linear-gradient(135deg, white 5px, yellow);
+}
+
+/*Stile del led verde*/
+.green-led {
+  background-color: green;
+  background-image: linear-gradient(135deg, white 5px, green);
+}
+
+/*Stile dello schermo*/
+#screen {
+  margin-top: 1.5rem;
+  background-color: #343a40;
+  height: 70vh;
+  grid-area: content;
+  border-radius: 20px;
+  border: 20px solid #dedede;
+  border-top-width: 40px;
+  border-bottom-width: 40px;
+  background-image: linear-gradient(135deg, #343a40, white 3000px, #343a40);
+  overflow-y: auto;
+}
+
+/*Stile del Loader*/
+#loader {
+  display: grid;
+  justify-items: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/*Stile dell'immagine del Loader*/
+#loader img {
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/*Stile dell'animazione*/
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/*Stile del Pokedex*/
+#pokedex {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(5, 20%);
+}
+
+/*Stile della PokeCard*/
+.poke-card {
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0.5rem;
+  text-align: center;
+}
+
+/*Stile della immagine della PokeCard*/
+.poke-card figure {
+  background-color: white;
+  border: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: grid;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+}
