@@ -1,3 +1,7 @@
+
+<img width="1123" alt="Screen Pokemon" src="https://github.com/EmanueleManno/Pokedex/assets/128712265/ac489508-8258-4f33-874f-098846492e0b">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
